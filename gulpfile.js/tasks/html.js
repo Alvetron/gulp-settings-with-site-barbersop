@@ -14,6 +14,7 @@ const html = () =>
   .pipe(fileInclude())
   .pipe(htmlMin({ collapseWhitespace: true }))
   .pipe(app.gulp.dest(app.path.html.dest))
+  .pipe(app.browserSync.stream())
 }
 
 module.exports = html;

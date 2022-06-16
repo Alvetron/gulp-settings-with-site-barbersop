@@ -10,6 +10,8 @@ const scss = () =>
   .pipe(cssmin())
   .pipe(rename({ suffix : ".min" }))
   .pipe(app.gulp.dest(app.path.scss.dest))
+  .pipe(app.browserSync.stream())
+
 }
 
 module.exports = scss;

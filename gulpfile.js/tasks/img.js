@@ -6,6 +6,7 @@ const img = () => {
   .pipe(newer(app.path.img.dest))
   .pipe(imagemin())
   .pipe(app.gulp.dest(app.path.img.dest))
+  .pipe(app.browserSync.stream())
 }
 
 module.exports = img;

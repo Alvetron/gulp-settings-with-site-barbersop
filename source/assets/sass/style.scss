@@ -1,3 +1,5 @@
+$main-color : #ff0000;
+
 .hello {
   width: 100px;
 
@@ -10,5 +12,5 @@
 .test {
   width: 100px;
   height: 100px;
-  background-color: #ff0000;
+  background-color: $main-color;
 }
