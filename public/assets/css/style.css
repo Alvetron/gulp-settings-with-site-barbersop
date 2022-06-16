@@ -1,0 +1,12 @@
+.hello {
+  width: 100px;
+}
+.hello::after {
+  content: "";
+}
+
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+}
