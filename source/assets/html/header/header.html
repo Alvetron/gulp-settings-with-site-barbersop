@@ -1,14 +1,55 @@
-<header class="page-header">
-  <a class="page-header__logo" href="#">
-    <img class="pahe-header__logo-image" src="./assets/images/header/header-mob.png" alt="Логотип Барбершоп 'Бородинский'" width="226" height="30">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <ul class="main-nav__list site-list">
-      <li clgass="site-list__item">ГЛАВНАЯ</li>
-      <li class="site-list__item">НАШИ РАБОТЫ</li>
-      <li class="site-list__item">ЗАПИСАТЬСЯ</li>
-      <li class="site-list__item">КОНТАКТЫ</li>
-    </ul>
-  </nav>
+<header class="header">
+  <div class="header-mob">
+    <a class="header__logo" href="#">
+      <img class="header__logo-image" src="./assets/images/header/header-mob.png" alt="Логотип Барбершоп 'Бородинский'" width="226" height="30">
+    </a>
+    <nav class="nav nav--mob">
+      <h3 class="nav__title">ГЛАВНАЯ</h3>
+      <button class="nav__toggle" type="button">Открыть меню</button>
+      <ul class="nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">ГЛАВНАЯ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">НАШИ РАБОТЫ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">ЗАПИСАТЬСЯ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">КОНТАКТЫ</a>
+        </li>
+        <ul class="user-list">
+          <li class="user-list__item">
+            <button class="user-list__btn login-icon" type="button">Войти</button>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+  </div>
+  <div class="header-tablet">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active" href="#">ГЛАВНАЯ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">НАШИ РАБОТЫ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">ЗАПИСАТЬСЯ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">КОНТАКТЫ</a>
+          </li>
+        </ul>
+        <ul class="user-list">
+          <li class="user-list__item">
+            <button class="user-list__btn login-icon" type="button">Войти</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>

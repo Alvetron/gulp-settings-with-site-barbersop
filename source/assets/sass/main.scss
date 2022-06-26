@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  background-color: #fff;
+}
+
+button {
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@import "./chunks/header/header";
+
+@media (min-width: 768px) {
+
+  .container {
+    width: 640px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+}
