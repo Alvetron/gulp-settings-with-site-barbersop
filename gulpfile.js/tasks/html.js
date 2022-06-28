@@ -12,7 +12,7 @@ const html = () =>
     }))
   }))
   .pipe(fileInclude())
-  .pipe(htmlMin({ collapseWhitespace: true }))
+  .pipe(htmlMin({ collapseWhitespace: false }))
   .pipe(app.gulp.dest(app.path.html.dest))
   .pipe(app.browserSync.stream())
 }

@@ -40,10 +40,18 @@ button {
   padding: 0;
   font-family: inherit;
   font-size: inherit;
-  color: #fff;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.button {
+  width: 100%;
+  padding: 13px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border: solid 1px #e5ddd5;
 }
 
 .page-container {
@@ -67,8 +75,16 @@ button {
   overflow: hidden
 }
 
+/* SLIDER */
+@import "./chunks/slider/slider";
+
 @import "./chunks/header/header";
 @import "./chunks/stats/stats";
+@import "./chunks/advantages/advantages";
+@import "./chunks/news/news";
+@import "./chunks/reviews/reviews";
+@import "./chunks/footer/footer";
+
 
 @media (min-width: 768px) {
 
@@ -76,6 +92,10 @@ button {
     width: 640px;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .button {
+    width: 160px;
   }
 
 }

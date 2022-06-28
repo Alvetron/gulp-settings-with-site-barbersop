@@ -1,0 +1,154 @@
+.reviews {
+  padding: 25px 0 15px 0;
+  background-color: #f8f5f2;
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__write {
+    display: none;
+  }
+
+  &__prev,
+  &__next {
+    display: none;
+  }
+
+  &__list {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    display: flex;
+    min-width: 280px;
+  }
+
+  &__image {
+    margin-top: 5px;
+    margin-right: 20px;
+  }
+
+  &__author {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__desc {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__toggles {
+    text-align: center;
+
+    .slider__toggle {
+
+      &::after {
+        border: solid 1px rgba(54, 54, 54, .5);
+      }
+
+      &:hover::after {
+        background-color: rgba(54, 54, 54, 0.5);
+      }
+
+      &.active::after {
+        background-color: rgba(54, 54, 54, 1);
+      }
+
+    }
+
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .reviews {
+
+    &__slider {
+      position: relative;
+      display: flex;
+    }
+
+    &__prev,
+    &__next {
+      display: block;
+      width: 50px;
+      font-size: 0;
+      border: solid 1px #e5ddd5;
+    }
+
+    &__list {
+      width: 540px;
+      margin-bottom: 0;
+      border-top: solid 1px #e5ddd5;
+      border-bottom: solid 1px #e5ddd5;
+    }
+
+    &__item {
+      min-width: 540px;
+      padding: 30px;
+    }
+
+    &__image {
+      margin-top: 0;
+    }
+
+    &__author-image {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    &__toggles {
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      padding: 0 20px;
+      background-color: #f8f5f2;
+      transform: translateX(-50%);
+    }
+
+  }
+
+}
+
+@media (min-width: 960px) {
+
+  .reviews {
+    padding-bottom: 100px;
+
+    &__list {
+      width: 820px;
+      margin: 0 20px;
+    }
+
+    &__item {
+      align-items: center;
+      min-width: 820px;
+      padding: 0;
+      border: solid 1px #e5ddd5;
+
+    }
+
+    &__image {
+      margin-right: 65px;
+    }
+
+    &__author-image {
+      width: 250px;
+      height: 160px;
+      border-radius: 0;
+    }
+
+    &__toggles {
+      bottom: -50px;
+    }
+
+  }
+  
+}
