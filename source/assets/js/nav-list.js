@@ -1,5 +1,5 @@
 let btn = document.querySelector(".nav__toggle");
-let menu = document.querySelector(".nav__list ");
+let menu = document.querySelector(".nav__list");
 
 const showMenu = () => {
   if(menu.style.right === "0px") {

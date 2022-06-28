@@ -14,59 +14,12 @@
   <title>BORODINSKI</title>
 </head>
 <body>
+  <div class="page-container">
+    @@include("./assets/html/header/header.html")
 
-@@include("./assets/html/header/header.html")
-
-  <main class="page-main container">
+  <main class="page-main">
     <h1 class="visually-hidden">Барбершоп "BORODINSKI"</h1>
-
-    <section class="stats">
-      <header class="stats__header">
-        <h2 class="stats__slogan">СТРИЖКА У НАС ЭТО ВЫГОДНО</h2>
-        <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-        <small class="stats__legend stats__legend--bottom">
-          * — приведённые данные ложь
-        </small>
-      </header>
-        <table class="stats__list">
-          <tr>
-            <td class="stats__value">
-              1 500<sup>*</sup>
-            </td>
-            <td class="stats__name">
-              рублей <br> вложений
-            </td>
-          </tr>
-          <tr>
-            <td class="stats__value">
-              7 200
-            </td>
-            <td class="stats__name">
-              секунд <br> времени мастера
-            </td>
-          </tr>
-          <tr>
-            <td class="stats__value">
-              90 000
-            </td>
-            <td class="stats__name">
-              постриженых <br> волос
-            </td>
-          </tr>
-          <tr>
-            <td class="stats__value">
-              500 000<sup>*</sup>
-            </td>
-            <td class="stats__name">
-              лайков и <br> комплиментов
-            </td>
-          </tr>
-        </table>
-        <small class="stats__legend stats__legend--bottom">
-          * — приведённые данные ложь
-        </small>
-    </section>
-
+    @@include("./assets/html/stats/stats.html")
     <section class="advantages">
       <h2 class="visually-hidden">Наши преймущества:</h2>
       <div class="advantages__slider slider">
@@ -92,7 +45,6 @@
         </div>
       </div>
     </section>
-
     <section class="news">
       <h2>Новости и акции</h2>
       <ul class="news__list">
@@ -157,6 +109,7 @@
       <a class="copyright__link button" href="#">SUPERCELL</a>
     </div>
   </footer>
+  </div>
   <script src="assets/js/nav-list.js"></script>
 </body>
 </html>
