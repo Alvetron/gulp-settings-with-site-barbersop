@@ -128,6 +128,7 @@
     padding: 15px 20px 15px 50px;
     font-weight: 300;
     text-align: left;
+    color: #ffffff;
     transition: background-color .02s linear,
     color .02s linear;
 
@@ -163,7 +164,7 @@
       display: block;
 
       .container {
-        width: 690px;
+        width: 670px;
       }
 
     }
@@ -244,7 +245,7 @@
   .header-tablet {
 
     .container {
-      width: 1010px;
+      width: 960px;
     }
 
   }
@@ -296,10 +297,11 @@
       background-color 0.1s;
       transition: color 0.1s,
       background-color 0.1s;
+      color: #ffffff;
 
       &:hover {
         color: #000;
-        background-color: #fff;
+        background-color: #ffffff;
         opacity: 1;
       }
 

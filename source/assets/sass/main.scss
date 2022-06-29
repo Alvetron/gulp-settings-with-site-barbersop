@@ -52,7 +52,20 @@ button {
   font-weight: 700;
   background-color: transparent;
   border: solid 1px #e5ddd5;
+  transition: background-color 0.1s linear,
+  border-color 0.1s linear,
+  color 0.1s linear;
 }
+
+.button:hover {
+  border-color: #d4cabe;
+}
+.button:active {
+  color: #a89e94;
+  background-color: #d5c9bd;
+  border-color: #d4cabe;
+}
+
 
 .page-container {
   overflow: hidden;

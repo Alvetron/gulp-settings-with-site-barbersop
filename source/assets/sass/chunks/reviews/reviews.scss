@@ -1,6 +1,23 @@
 .reviews {
+  position: relative;
   padding: 25px 0 15px 0;
   background-color: #f8f5f2;
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    bottom: -39px;
+    width: 100%;
+    height: 40px;
+    background-image:
+      linear-gradient(to top right, transparent 50%, #f8f5f2 0),
+      linear-gradient(to bottom right, #f8f5f2 50%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    transform: translateX(-50%);
+    content: "";
+  }
 
   &__title {
     margin-bottom: 30px;
@@ -68,6 +85,22 @@
 @media (min-width: 768px) {
 
   .reviews {
+    padding-bottom: 50px;
+    
+    &::after {
+      display: none;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &__write{
+      display: block;
+    }
 
     &__slider {
       position: relative;
@@ -76,10 +109,43 @@
 
     &__prev,
     &__next {
+      position: relative;
       display: block;
       width: 50px;
       font-size: 0;
       border: solid 1px #e5ddd5;
+
+      &::after {
+        position: absolute;
+        left: calc(50% - 6px);
+        bottom: calc(50% - 6px);
+        width: 12px;
+        height: 12px;
+        background-image:
+        linear-gradient(to top right, transparent 50%, #000000 0),
+        linear-gradient(to bottom right, #000000 50%, transparent 0);
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+        background-position: left, right;
+        content: "";
+      }
+
+    }
+
+    &__prev {
+
+      &::after {
+        transform: rotate(90deg);
+      }
+
+    }
+
+    &__next {
+
+      &::after {
+        transform: rotate(-90deg);
+      }
+
     }
 
     &__list {
@@ -122,6 +188,12 @@
   .reviews {
     padding-bottom: 100px;
 
+    &__title {
+      margin-left: 40px;
+      font-size: 40px;
+      text-align: left;
+    }
+
     &__list {
       width: 820px;
       margin: 0 20px;
@@ -150,5 +222,5 @@
     }
 
   }
-  
+
 }
