@@ -11,7 +11,8 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+figure {
   margin: 0;
 }
 
@@ -926,20 +927,29 @@ button {
   .reviews__list {
     width: 820px;
     margin: 0 20px;
+    border: none;
   }
   .reviews__item {
-    align-items: center;
+    align-items: stretch;
     min-width: 820px;
     padding: 0;
-    border: solid 1px #e5ddd5;
   }
   .reviews__image {
-    margin-right: 65px;
+    margin-right: 0;
   }
   .reviews__author-image {
-    width: 250px;
-    height: 160px;
+    min-width: 250px;
+    min-height: 160px;
+    height: 100%;
     border-radius: 0;
+  }
+  .reviews__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 1px solid #e5ddd5;
   }
   .reviews__toggles {
     bottom: -50px;
