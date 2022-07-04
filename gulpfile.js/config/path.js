@@ -4,9 +4,9 @@ const srcPath = "./source";
 module.exports = {
   buildPath : buildPath,
   html : {
-    src : srcPath + "/index.html",
+    src : srcPath + "/*.html",
     watch : srcPath + "/**/*.html",
-    dest : buildPath + "/"
+    dest : buildPath + "/",
   },
   scss : {
     src : srcPath + "/assets/sass/*.scss",

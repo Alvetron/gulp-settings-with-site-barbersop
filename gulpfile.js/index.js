@@ -21,6 +21,7 @@ const watcher = () =>
   app.gulp.watch(`${app.path.js.watch}`, js);
 }
 
+exports.html = html;
 exports.sass = sass;
 exports.img = img;
 
