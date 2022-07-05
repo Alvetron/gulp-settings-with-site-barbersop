@@ -1,0 +1,146 @@
+.price {
+  position: relative;
+  padding: 70px 0 20px;
+  background-color: #353535;
+
+  .triangle {
+    background-color: #353535;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  &__table {
+    width: 100%;
+    margin: 0 auto 15px auto;
+  }
+
+  &__row-num {
+    display: none;
+  }
+
+  &__name {
+    width: 50%;
+    padding: 7px 0;
+    color: #ffffff;
+  }
+
+  &__name-text {
+    font-weight: 700;
+  }
+
+  &__name-clarif {
+    display: block;
+    font-weight: 300;
+  }
+
+  &__value {
+    width: 50%;
+    padding: 7px 0;
+    text-align: right;
+    vertical-align: top;
+    color: #ffffff;
+  }
+
+  &__discount-time {
+    padding: 17px 20px 17px 110px;
+    border: 1px solid #484848;
+  }
+
+  &__discount-time {
+    background-image: url("../images/portfolio/clock-icon.png");
+    background-size: 57px;
+    background-position: 25px center;
+    background-repeat: no-repeat;
+  }
+
+  &__discount-time__text {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .price {
+
+    &__title {
+      margin-bottom: 50px;
+    }
+
+    padding: 80px 0 55px;
+    .triangle {
+      display: none;
+    }
+
+    &__row-num {
+      display: table-cell;
+      padding: 0 30px;
+      color: #ffffff;
+    }
+
+    &__name {
+      justify-content: space-between;
+      min-width: 410px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__name-text {
+      display: inline-block;
+      width: 49%;
+    }
+
+    &__name-clarif {
+      display: inline-block;
+      width: 50%;
+      text-align: right;
+    }
+
+    &__value {
+      padding: 0 20px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    &__row-num,
+    &__name,
+    &__value {
+      height: 51px;
+      border: 1px solid #4a4a4a;
+    }
+
+    &__discount-time {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+  }
+
+}
+
+@media (min-width: 960px) {
+
+  .price {
+
+    padding: 60px 0 80px;
+    &__table {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__discount-time {
+      padding: 170px 70px 20px 70px;
+      background-position: center 20px;
+      background-size: 140px;
+    }
+
+  }
+
+}

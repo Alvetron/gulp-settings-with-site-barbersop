@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- STYLES -->
-  <link rel="stylesheet" href="assets/css/main.min.css">
-
-  <title>BORODINSKI</title>
+  @@include("./assets/html/chunks/head/head.html", {
+    title : "BORODINSKI"
+  })
 </head>
 <body>
   <div class="page-container">
-    @@include("./assets/html/header/header.html")
+    @@include("./assets/html/chunks/header/header.html", {
+      navTitle: "ГЛАВНАЯ"
+    })
 
   <main class="page-main">
     <h1 class="visually-hidden">Барбершоп "BORODINSKI"</h1>
-    @@include("./assets/html/stats/stats.html")
-    @@include("./assets/html/advantages/advantages.html")
-    @@include("./assets/html/news/news.html")
-    @@include("./assets/html/reviews/reviews.html")
-    @@include("./assets/html/footer/footer.html")
+    @@include("./assets/html/chunks/index/stats/stats.html")
+    @@include("./assets/html/chunks/index/advantages/advantages.html")
+    @@include("./assets/html/chunks/index/news/news.html")
+    @@include("./assets/html/chunks/index/reviews/reviews.html")
+    @@include("./assets/html/chunks/footer/footer.html")
   </main>
 
   </div>

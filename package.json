@@ -77,6 +77,7 @@
     "global-modules": "^2.0.0",
     "global-prefix": "^3.0.0",
     "globby": "^11.1.0",
+    "gulp-cssbeautify": "^3.0.1",
     "hard-rejection": "^2.1.0",
     "has": "^1.0.3",
     "has-flag": "^4.0.0",

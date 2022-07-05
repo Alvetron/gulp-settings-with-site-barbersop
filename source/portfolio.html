@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include("./assets/html/chunks/head/head.html", {
+    title : "Наши работы",
+  })
+</head>
+<body>
+  <div class="page-container">
+    @@include("./assets/html/chunks/header/header.html", {
+      navTitle : "РАБОТЫ",
+    })
+    <main>
+      <h1 class="visually-hidden">Наши работы</h1>
+      @@include("./assets/html/chunks/portfolio/portfolio.html")
+      @@include("./assets/html/chunks/price/price.html")
+      @@include("./assets/html/chunks/footer/footer.html")
+    </main>
+  </div>
+  <script src="assets/js/nav-list.js"></script>
+</body>
+</html>

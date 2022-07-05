@@ -1,0 +1,263 @@
+.portfolio {
+  position: relative;
+  padding: 30px 0 35px;
+  background-color: #f8f5f2;
+
+  &__best-flag {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    z-index: 5;
+    width: 170px;
+    min-height: 50px;
+    padding: 14px 10px 14px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #826550;
+
+    &::after,
+    &::before {
+      position: absolute;
+      right: -18px;
+      width: 19px;
+      height: 32px;
+      background-color: #826550;
+      content: "";
+    }
+
+    &::after {
+      top: 0;
+      clip-path: polygon(0 100%,-2% 0,44% 0);
+    }
+
+    &::before {
+      bottom: 0;
+      clip-path: polygon(0 100%,-2% 0,44% 32px);
+    }
+
+  }
+
+  &__header {
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    display: none;
+  }
+
+  &__item,
+  &__item-best {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border: 1px solid #e5ddd5;
+  }
+
+  &__item-best {
+    position: relative;
+  }
+
+  &__image-block,
+  &__image-block-best {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__image-block {
+    height: 176px;
+  }
+
+  &__image-block-best {
+    height: 480px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__desc {
+    max-width: 380px;
+    padding: 20px 10px 20px 15px;
+  }
+
+  &__name {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__review {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__action-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__action-item {
+    min-width: 90px;
+    padding: 0 0 0 58px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-position: 20px center;
+    background-repeat: no-repeat;
+  }
+
+  &__action-item--scissors {
+    background-image: url("../images/portfolio/action-icons/scissors.png");
+  }
+
+  &__action-item--bread {
+    background-image: url("../images/portfolio/action-icons/beard.png");
+  }
+
+  &__action-item--mustache {
+    background-image: url("../images/portfolio/action-icons/mustache.png");
+    background-position: 9px center;
+  }
+
+}
+
+@media (min-width: 640px){
+  .portfolio {
+
+    &__best-flag {
+      top: 30px;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 60px;
+    }
+
+    &__link {
+      display: block;
+    }
+
+    &__item,
+    &__item-best {
+      display: flex;
+      width: 640px;
+      padding-bottom: 0;
+    }
+
+    &__image-block,
+    &__image-block-best{
+      width: auto;
+      min-width: 270px;
+    }
+
+    &__image-block {
+      height: 293px;
+    }
+
+    &__image-block-best {
+      height: 480px;
+    }
+
+    &__desc {
+      padding: 40px 50px;
+    }
+
+    &__name {
+      margin-bottom: 30px;
+    }
+
+    &__action-list {
+      padding: 0 90px 30px 30px;
+    }
+
+  }
+
+}
+
+@media (min-width: 960px) {
+
+  .portfolio {
+    padding-bottom: 60px;
+
+    .triangle {
+      display: none;
+    }
+
+    &__header {
+      margin-bottom: 40px;
+    }
+
+    &__best-flag {
+      left: auto;
+      right: 0;
+
+      &::after,
+      &::before {
+        left: -17px;
+      }
+
+      &::before {
+        clip-path: polygon(32% 100%,92% 0px,92% 32px);
+      }
+
+      &::after {
+        clip-path: polygon(4px 0,92% 0px,92% 32px);
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__item-best {
+      width: 100%;
+    }
+
+    &__item {
+      display: block;
+      width: 294px;
+      margin: 0 0 20px 0;
+    }
+
+    &__wrapper {
+      min-height: 250px;
+      padding-bottom: 15px;
+    }
+
+    &__image-block {
+      min-width: 294px;
+    }
+
+    &__image-block-best {
+      min-width: 480px;
+    }
+
+    &__desc {
+      padding: 30px 33px 0 33px;
+    }
+
+    &__action-list {
+      padding-left: 15px;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
+
+}
