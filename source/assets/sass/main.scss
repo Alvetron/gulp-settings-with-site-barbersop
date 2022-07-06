@@ -46,6 +46,15 @@ button {
   cursor: pointer;
 }
 
+textarea {
+  resize: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
 .button {
   width: 100%;
   padding: 13px 20px;
@@ -62,6 +71,7 @@ button {
 .button:hover {
   border-color: #d4cabe;
 }
+
 .button:active {
   color: #a89e94;
   background-color: #d5c9bd;
@@ -106,21 +116,40 @@ button {
   clip-path: polygon(0 0, 50% 100%, 100% 0);
 }
 
+.input {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  margin: 6px auto;
+  padding: 15px;
+  font-family: 'PT Sans Narrow';
+  font-size: 18px;
+  border: 1px solid #e5ddd5;
+  outline: none
+}
+
+.input::placeholder {
+  opacity: 1;
+}
+
 /* SLIDER */
-@import "./chunks/slider/slider";
+@import "./chunks/slider";
 
 /* INDEX  */
-@import "./chunks/header/header";
-@import "./chunks/stats/stats";
-@import "./chunks/advantages/advantages";
-@import "./chunks/news/news";
-@import "./chunks/reviews/reviews";
-@import "./chunks/footer/footer";
+@import "./chunks/header";
+@import "./chunks/stats";
+@import "./chunks/advantages";
+@import "./chunks/news";
+@import "./chunks/reviews";
+@import "./chunks/footer";
 
 /* OUR WORKS */
-@import "./chunks/portfolio/portfolio";
-@import "./chunks/price/price";
+@import "./chunks/portfolio";
+@import "./chunks/price";
 
+/* appointment */
+@import "./chunks/appointment-form";
 
 
 

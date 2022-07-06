@@ -1,0 +1,87 @@
+<form class="appointment">
+  <div class="container">
+    <h2 class="appointment__title section__title">Запись на стрижку</h2>
+    <div class="appointment__row appointment__row--1">
+      <input class="appointment__input input" name="surname" type="text" placeholder="Фамилия">
+      <input class="appointment__input input" name="name" type="text" placeholder="Имя">
+      <input class="appointment__input input" name="patronymic" type="text" placeholder="Отчество">
+    </div>
+    <div class="appointment__row appointment__row--2">
+      <input class="appointment__input appointment__input-phone input" name="phone" type="text" placeholder="Контактный телефон">
+      <input class="appointment__input input" name="email" type="text" placeholder="Контактный e-mail">
+    </div>
+    <textarea class="appointment__textarea input" name="text" placeholder="Доп. информация для мастера"></textarea>
+    <fieldset class="appointment__set">
+      <legend class="appointment__set-title">ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ:</legend>
+      <div class="appointment__set-inner">
+        <label class="appointment__radio-label" for="style_1">
+          <input class="appointment__radio visually-hidden" type="radio" name="bread-type" id="style_1">
+          <div class="appointment__radio--fake"></div>
+          <span class="appointment__radio-subtext">адмирал</span>
+          <img class="appointment__icon" src="assets/images/appointment/beard-1.png" alt="first beard style icon" width="52" height="49">
+        </label>
+        <label class="appointment__radio-label" for="style_2">
+          <input class="appointment__radio visually-hidden" type="radio" name="bread-type" id="style_2">
+          <div class="appointment__radio--fake"></div>
+          <span class="appointment__radio-subtext">лесоруб</span>
+          <img class="appointment__icon" src="assets/images/appointment/beard-2.png" alt="first beard style icon" width="58" height="68">
+        </label>
+        <label class="appointment__radio-label" for="style_3">
+          <input class="appointment__radio visually-hidden" type="radio" name="bread-type" id="style_3">
+          <div class="appointment__radio--fake"></div>
+          <span class="appointment__radio-subtext">лесоруб</span>
+          <img class="appointment__icon" src="assets/images/appointment/beard-3.png" alt="first beard style icon" width="64" height="78">
+        </label>
+        <label class="appointment__radio-label" for="style_4">
+          <input class="appointment__radio visually-hidden" type="radio" name="bread-type" id="style_4">
+          <div class="appointment__radio--fake"></div>
+          <span class="appointment__radio-subtext">боярин</span>
+          <img class="appointment__icon" src="assets/images/appointment/beard-4.png" alt="first beard style icon" width="58" height="98">
+        </label>
+        <label class="appointment__radio-label" for="style_5">
+          <input class="appointment__radio visually-hidden" type="radio" name="bread-type" id="style_5">
+          <div class="appointment__radio--fake"></div>
+          <span class="appointment__radio-subtext">мудрец</span>
+          <img class="appointment__icon" src="assets/images/appointment/beard-5.png" alt="first beard style icon" width="46" height="105">
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="appointment__set">
+      <legend class="appointment__set-title">Дополнительные услуги:</legend>
+      <div class="appointment__set-inner">
+        <label class="appointment__checkbox-label" for="checkbox_1">
+          <input class="appointment__checkbox visually-hidden" type="checkbox" name="checkbox_1" id="checkbox_1">
+          <div class="appointment__checkbox--fake"></div>
+          <p class="appointment__checkbox-text">Подкрасить бороду</p>
+        </label>
+        <label class="appointment__checkbox-label" for="checkbox_2">
+          <input class="appointment__checkbox visually-hidden" type="checkbox" name="checkbox_1" id="checkbox_2">
+          <div class="appointment__checkbox--fake"></div>
+          <p class="appointment__checkbox-text">Накрутить усы</p>
+        </label>
+        <label class="appointment__checkbox-label" for="checkbox_3">
+          <input class="appointment__checkbox visually-hidden" type="checkbox" name="checkbox_1" id="checkbox_3">
+          <div class="appointment__checkbox--fake"></div>
+          <p class="appointment__checkbox-text">Причесать бороду</p>
+        </label>
+        <label class="appointment__checkbox-label" for="checkbox_4">
+          <input class="appointment__checkbox visually-hidden" type="checkbox" name="checkbox_1" id="checkbox_4">
+          <div class="appointment__checkbox--fake"></div>
+          <p class="appointment__checkbox-text">Подровнять виски</p>
+        </label>
+        <label class="appointment__checkbox-label" for="checkbox_5">
+          <input class="appointment__checkbox visually-hidden" type="checkbox" name="checkbox_1" id="checkbox_5">
+          <div class="appointment__checkbox--fake"></div>
+          <p class="appointment__checkbox-text">Убрать седину</p>
+        </label>
+        <label class="appointment__checkbox-label" for="checkbox_6">
+          <input class="appointment__checkbox visually-hidden" type="checkbox" name="checkbox_1" id="checkbox_6">
+          <div class="appointment__checkbox--fake"></div>
+          <p class="appointment__checkbox-text">Отполировать лысину</p>
+        </label>
+      </div>
+      <button class="button appointment__submit" type="submit">Отправить заявку</button>
+    </fieldset>
+  </div>
+  <div class="triangle"></div>
+</form>

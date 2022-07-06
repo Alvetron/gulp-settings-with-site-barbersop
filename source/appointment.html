@@ -2,21 +2,19 @@
 <html lang="en">
 <head>
   @@include("./assets/html/chunks/head.html", {
-    title : "BORODINSKI"
+    title : "ЗАПИСАТЬСЯ"
   })
 </head>
 <body>
   <div class="page-container">
     @@include("./assets/html/chunks/header.html", {
-      navTitle: "ГЛАВНАЯ"
+      navTitle: "ЗАПИСАТЬСЯ"
     })
 
   <main class="page-main">
-    <h1 class="visually-hidden">Барбершоп "BORODINSKI"</h1>
-    @@include("./assets/html/chunks/stats.html")
-    @@include("./assets/html/chunks/advantages.html")
-    @@include("./assets/html/chunks/news.html")
-    @@include("./assets/html/chunks/reviews.html")
+    <h1 class="visually-hidden">Запись на стрижку</h1>
+
+    @@include("./assets/html/chunks/appointment-form.html")
     @@include("./assets/html/chunks/footer.html")
   </main>
 

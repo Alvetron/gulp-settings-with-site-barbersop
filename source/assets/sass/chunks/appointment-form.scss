@@ -1,0 +1,242 @@
+.appointment {
+  position: relative;
+  padding: 30px 0 40px;
+  background-color: #f8f5f2;
+
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__row{
+    margin-bottom: 30px;
+  }
+
+  &__textarea {
+    font-family: 'PT Sans Narrow';
+    height: 210px;
+    margin-bottom: 50px;
+  }
+
+  &__set {
+    margin-top: 40px;
+    border: none;
+  }
+
+  &__set-title {
+    display: block;
+    margin: 0 auto 30px auto;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__set-inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+  }
+
+  &__radio-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 15px;
+  }
+
+  &__radio--fake {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: solid 1px #e5ddd5;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: calc(50% - 9px);
+      left: calc(50% - 9px);
+      display: none;
+      width: 18px;
+      height: 18px;
+      border: solid 1px #e5ddd5;
+      border-radius: 50%;
+      content: "";
+    }
+
+  }
+
+  &__radio:checked + &__radio--fake::before {
+    display: block;
+  }
+
+  &__radio-subtext {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__checkbox-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  &__checkbox--fake {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    border: solid 1px #e5ddd5;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: none;
+      width: 22px;
+      height: 16px;
+      background-image: url("../images/appointment/checkbox-icon.png");
+      content: "";
+      transform: translate(-50%, -50%);
+    }
+
+  }
+
+  &__checkbox:checked + &__checkbox--fake::before {
+    display: block;
+  }
+
+  .appointment__submit {
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #f8f5f2;
+    background-color: #826550;
+    border: none;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .appointment {
+    padding-bottom: 70px;
+
+    .container {
+      max-width: 640px;
+    }
+
+    .button {
+      width: 100%;
+    }
+
+    .triangle {
+      display: none;
+    }
+
+    &__set {
+      margin-top: 40px;
+    }
+    
+    &__row--1 {
+      display: flex;
+
+      .input {
+        max-width: 295px;
+        border-right: 0;
+        &:last-child {
+          border-right: 1px solid #e5ddd5;
+        }
+
+      }
+
+    }
+
+    &__input {
+      max-width: 100%;
+    }
+
+    &__input-phone {
+      margin-bottom: 30px;
+    }
+
+    &__textarea {
+      max-width: 100%;
+    }
+
+    &__set {
+      text-align: center;
+      border-top: 1px solid #e5ddd5;
+    }
+
+    &__set-title {
+      width: 370px;
+      font-size: 30px;
+    }
+
+    &__set-inner {
+      justify-content: space-between;
+    }
+
+    &__radio-subtext {
+      font-size: 24px;
+    }
+
+    &__checkbox-label {
+      width: 50%;
+    }
+
+    &__checkbox-text {
+      font-size: 24px;
+    }
+
+  }
+
+}
+
+
+@media (min-width: 960px) {
+  .appointment {
+
+    .container {
+      max-width: 960px;
+    }
+
+    .input {
+      margin: 0;
+    }
+
+    &__row--1 {
+      justify-content: space-between;
+
+      .input {
+        border-right: 1px solid #e5ddd5;
+      }
+
+    }
+
+    &__row--2 {
+      display: flex;
+      justify-content: space-between;
+
+      .input {
+        max-width: 460px;
+      }
+
+    }
+
+    &__checkbox-label {
+      width: 33.33%;
+    }
+
+
+  }
+
+}
