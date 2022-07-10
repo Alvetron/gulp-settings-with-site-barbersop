@@ -7,9 +7,6 @@
     max-width: 320px;
     margin: 0 auto;
   }
-  &__title {
-    margin-bottom: 30px;
-  }
 
   &__row{
     margin-bottom: 30px;
@@ -115,17 +112,22 @@
     display: block;
   }
 
-  .appointment__submit {
+  &__submit {
     margin-top: 30px;
     text-transform: uppercase;
     color: #f8f5f2;
     background-color: #826550;
     border: none;
+
+    &.button {
+      width: 100%;
+    }
+
   }
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .appointment {
     padding-bottom: 70px;
 
@@ -133,18 +135,10 @@
       max-width: 640px;
     }
 
-    .button {
-      width: 100%;
-    }
-
     .triangle {
       display: none;
     }
 
-    &__set {
-      margin-top: 40px;
-    }
-    
     &__row--1 {
       display: flex;
 
@@ -172,6 +166,7 @@
     }
 
     &__set {
+      margin-top: 40px;
       text-align: center;
       border-top: 1px solid #e5ddd5;
     }
@@ -236,6 +231,11 @@
       width: 33.33%;
     }
 
+    &__submit {
+      height: 70px;
+      margin-top: 70px;
+      font-size: 24px;
+    }
 
   }
 

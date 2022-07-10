@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
 
   <!-- STYLES -->
@@ -17,40 +18,15 @@
 <body>
   <div class="page-container">
     <header class="header">
-  <div class="header-mob">
-    <a class="header__logo" href="#">
-      <img class="header__logo-image" src="./assets/images/header/header-mob.png" alt="Логотип Барбершоп 'Бородинский'" width="226" height="30">
-    </a>
-    <nav class="nav nav--mob">
-      <h3 class="nav__title">ЗАПИСАТЬСЯ</h3>
-      <button class="nav__toggle" type="button">Открыть меню</button>
-      <ul class="nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">ГЛАВНАЯ</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="portfolio.html">НАШИ РАБОТЫ</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="appointment.html">ЗАПИСАТЬСЯ</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">КОНТАКТЫ</a>
-        </li>
-        <ul class="user-list">
-          <li class="user-list__item">
-            <button class="user-list__btn login-icon" type="button">Войти</button>
-          </li>
-        </ul>
-      </ul>
-    </nav>
-  </div>
-  <div class="header-tablet">
+  <a class="header__logo" href="#">Back to main page</a>
+  <nav class="nav">
+    <h3 class="nav__title">ЗАПИСАТЬСЯ</h3>
+    <button class="nav__toggle" type="button">Открыть меню</button>
     <div class="container">
-      <nav class="nav">
-        <ul class="nav__list site-list">
+      <ul class="nav__list">
+        <ul class="site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="index.html">ГЛАВНАЯ</a>
+            <a class="site-list__link" href="index.html">ГЛАВНАЯ</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="portfolio.html">НАШИ РАБОТЫ</a>
@@ -67,9 +43,9 @@
             <button class="user-list__btn login-icon" type="button">Войти</button>
           </li>
         </ul>
-      </nav>
+      </ul>
     </div>
-  </div>
+  </nav>
 </header>
 
   <main class="page-main">
@@ -77,7 +53,10 @@
 
     <form class="appointment">
   <div class="container">
-    <h2 class="appointment__title section__title">Запись на стрижку</h2>
+    <div class="section-header">
+      <h2 class="appointment__title section-title">Запись на стрижку</h2>
+      <button class="main-link button" type="button">На главную</button>
+    </div>
     <div class="appointment__row appointment__row--1">
       <input class="appointment__input input" name="surname" type="text" placeholder="Фамилия">
       <input class="appointment__input input" name="name" type="text" placeholder="Имя">
@@ -157,7 +136,7 @@
           <p class="appointment__checkbox-text">Отполировать лысину</p>
         </label>
       </div>
-      <button class="button appointment__submit" type="submit">Отправить заявку</button>
+      <button class="appointment__submit button" type="submit">Отправить заявку</button>
     </fieldset>
   </div>
   <div class="triangle"></div>

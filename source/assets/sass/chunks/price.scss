@@ -46,14 +46,11 @@
 
   &__discount-time {
     padding: 17px 20px 17px 110px;
-    border: 1px solid #484848;
-  }
-
-  &__discount-time {
     background-image: url("../images/portfolio/clock-icon.png");
     background-size: 57px;
     background-position: 25px center;
     background-repeat: no-repeat;
+    border: 1px solid #484848;
   }
 
   &__discount-time__text {
@@ -63,18 +60,21 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .price {
+    padding: 80px 0 55px;
+
+    .triangle {
+      display: none;
+    }
 
     &__title {
       margin-bottom: 50px;
     }
 
-    padding: 80px 0 55px;
-    .triangle {
-      display: none;
+    &__table {
+      margin-bottom: 8px;
     }
-
     &__row-num {
       display: table-cell;
       padding: 0 30px;
@@ -122,10 +122,13 @@
 }
 
 @media (min-width: 960px) {
-
   .price {
+    padding: 70px 0 80px;
 
-    padding: 60px 0 80px;
+    &__title {
+      margin-bottom: 30px;
+    }
+    
     &__table {
       margin-right: 50px;
       margin-bottom: 0;

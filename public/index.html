@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
 
   <!-- STYLES -->
@@ -17,40 +18,15 @@
 <body>
   <div class="page-container">
     <header class="header">
-  <div class="header-mob">
-    <a class="header__logo" href="#">
-      <img class="header__logo-image" src="./assets/images/header/header-mob.png" alt="Логотип Барбершоп 'Бородинский'" width="226" height="30">
-    </a>
-    <nav class="nav nav--mob">
-      <h3 class="nav__title">ГЛАВНАЯ</h3>
-      <button class="nav__toggle" type="button">Открыть меню</button>
-      <ul class="nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">ГЛАВНАЯ</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="portfolio.html">НАШИ РАБОТЫ</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="appointment.html">ЗАПИСАТЬСЯ</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">КОНТАКТЫ</a>
-        </li>
-        <ul class="user-list">
-          <li class="user-list__item">
-            <button class="user-list__btn login-icon" type="button">Войти</button>
-          </li>
-        </ul>
-      </ul>
-    </nav>
-  </div>
-  <div class="header-tablet">
+  <a class="header__logo" href="#">Back to main page</a>
+  <nav class="nav">
+    <h3 class="nav__title">ГЛАВНАЯ</h3>
+    <button class="nav__toggle" type="button">Открыть меню</button>
     <div class="container">
-      <nav class="nav">
-        <ul class="nav__list site-list">
+      <ul class="nav__list">
+        <ul class="site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="index.html">ГЛАВНАЯ</a>
+            <a class="site-list__link" href="index.html">ГЛАВНАЯ</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="portfolio.html">НАШИ РАБОТЫ</a>
@@ -67,9 +43,9 @@
             <button class="user-list__btn login-icon" type="button">Войти</button>
           </li>
         </ul>
-      </nav>
+      </ul>
     </div>
-  </div>
+  </nav>
 </header>
 
   <main class="page-main">
@@ -127,17 +103,18 @@
           <p class="advantages__desc">Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
         </li>
       </ul>
-      <div class="advantages__toggles slider__toggles">
-        <button class="slider__toggle active" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </div>
+<!--       <div class="advantages__toggles slider__toggles">
+        <button class="slider__toggle active" data-slide="1" type="button">1</button>
+        <button class="slider__toggle" data-slide="2" type="button">2</button>
+        <button class="slider__toggle" data-slide="3" type="button">3</button>
+      </div> -->
     </div>
   </div>
+  <div class="triangle"></div>
 </section>
     <section class="news">
   <div class="container">
-    <h2 class="news__title">Новости и акции</h2>
+    <h2 class="news__title section-title">Новости и акции</h2>
     <ul class="news__list">
       <li class="news__item">
         <a class="news__link" href="#">
@@ -145,6 +122,7 @@
             <span class="news__day">29</span>
             <br>
             <span class="news__month">сент</span>
+            <div class="triangle"></div>
           </time>
           <p class="news__text">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
         </a>
@@ -155,6 +133,7 @@
             <span class="news__day">19</span>
             <br>
             <span class="news__month">сент</span>
+            <div class="triangle"></div>
           </time>
           <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
         </a>
@@ -165,10 +144,9 @@
 </section>
     <section class="reviews">
   <div class="container">
-    <h3 class="reviews__title">ОТЗЫВЫ О НАС</h3>
+    <h3 class="reviews__title section-title">ОТЗЫВЫ О НАС</h3>
     <a class="reviews__write button" href="#">ОСТАВИТЬ СВОЙ</a>
     <div class="reviews__slider slider">
-      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
       <ul class="reviews__list slider__list">
         <li class="reviews__item">
           <figure class="reviews__image">
@@ -198,14 +176,9 @@
           </div>
         </li>
       </ul>
-      <button class="reviews__next" type="button">Следующий отзыв</button>
-      <div class="reviews__toggles slider__toggles">
-        <button class="slider__toggle active" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </div>
     </div>
   </div>
+  <div class="triangle"></div>
 </section>
     <footer class="footer">
   <div class="footer__wrapper container">
@@ -238,5 +211,10 @@
 
   </div>
   <script src="assets/js/nav-list.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/adv-slider.js"></script>
+  <script src="assets/js/rev-slider.js"></script>
 </body>
 </html>

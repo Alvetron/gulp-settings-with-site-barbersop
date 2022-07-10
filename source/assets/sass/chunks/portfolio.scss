@@ -39,14 +39,6 @@
 
   }
 
-  &__header {
-    margin-bottom: 30px;
-  }
-
-  &__link {
-    display: none;
-  }
-
   &__item,
   &__item-best {
     width: 280px;
@@ -135,26 +127,17 @@
 
 @media (min-width: 640px){
   .portfolio {
+    padding-bottom: 20px;
 
     &__best-flag {
       top: 30px;
-    }
-
-    &__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 60px;
-    }
-
-    &__link {
-      display: block;
     }
 
     &__item,
     &__item-best {
       display: flex;
       width: 640px;
+      margin-bottom: 40px;
       padding-bottom: 0;
     }
 
@@ -197,10 +180,6 @@
       display: none;
     }
 
-    &__header {
-      margin-bottom: 40px;
-    }
-
     &__best-flag {
       left: auto;
       right: 0;
@@ -211,11 +190,11 @@
       }
 
       &::before {
-        clip-path: polygon(32% 100%,92% 0px,92% 32px);
+        clip-path: polygon(32% 100%,92% 0,92% 32px);
       }
 
       &::after {
-        clip-path: polygon(4px 0,92% 0px,92% 32px);
+        clip-path: polygon(4px 0,92% 0,92% 32px);
       }
     }
 

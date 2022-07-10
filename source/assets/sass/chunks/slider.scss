@@ -1,11 +1,14 @@
-.slider {
+/* .slider {
 
   width: 280px;
   margin: 0 auto;
+  overflow: hidden;
 
   &__list {
+    position: relative;
+    left: 0;
     display: flex;
-    overflow: hidden;
+    pointer-events: none;
   }
 
   &__toggle {
@@ -43,4 +46,4 @@
     width: auto;
   }
 
-}
+} */
