@@ -9,7 +9,7 @@ module.exports = {
     dest : buildPath + "/",
   },
   scss : {
-    src : srcPath + "/assets/sass/*.scss",
+    src : srcPath + "/assets/sass/*.{scss,css}",
     watch : srcPath + "/assets/sass/**/*.scss",
     dest : buildPath + "/assets/css"
   },

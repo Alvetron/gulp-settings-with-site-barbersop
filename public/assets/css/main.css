@@ -91,7 +91,6 @@ fieldset {
   margin: -1px;
   bottom: 0;
   padding: 0;
-  white-space: no-wrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -179,58 +178,6 @@ fieldset {
 .slick-active button::after {
   background-color: rgba(255, 255, 255, 0.6);
 }
-
-/* SLIDER */
-
-/* .slider {
-
-  width: 280px;
-  margin: 0 auto;
-  overflow: hidden;
-
-  &__list {
-    position: relative;
-    left: 0;
-    display: flex;
-    pointer-events: none;
-  }
-
-  &__toggle {
-    width: 10px;
-    height: 10px;
-    margin: 0 10px;
-    font-size: 0;
-
-    &::after {
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-color: transparent;
-      border: solid 1px rgba(255, 255, 255, .6);
-      transform: rotate(45deg);
-      transition: background-color .1s;
-      content: "";
-    }
-
-    &:hover::after {
-      background-color: rgba(255, 255, 255, .3);
-    }
-
-    &.active::after {
-      background-color: rgba(255, 255, 255, 1);
-    }
-
-  }
-
-}
-
-@media (min-width: 768px) {
-
-  .slider {
-    width: auto;
-  }
-
-} */
 
 /* INDEX  */
 
@@ -629,6 +576,10 @@ fieldset {
   margin: 0 auto 30px auto;
 }
 
+.reviews__item-inner {
+  display: flex;
+}
+
 .reviews__image {
   margin-top: 5px;
   margin-right: 20px;
@@ -733,7 +684,7 @@ fieldset {
   background-repeat: no-repeat;
   background-position: center;
   border: solid 1px rgba(255, 255, 255, 0.2);
-  transform: border-color 0.1s linear, background-color 0.1s linear;
+  transition: border-color 0.1s linear, background-color 0.1s linear;
 }
 
 .social__link:hover {
@@ -742,7 +693,7 @@ fieldset {
 
 .social__link:active {
   background-color: #252525;
-  border: none;
+  border-color: transparent;
 }
 
 .social__link--vk {
@@ -782,7 +733,7 @@ fieldset {
 .footer__btn:active {
   color: rgba(255, 255, 255, 0.6);
   background-color: #252525;
-  border-color: none;
+  border-color: transparent;
 }
 
 /* OUR WORKS */
@@ -974,7 +925,7 @@ fieldset {
   color: #ffffff;
 }
 
-/* appointment */
+/* APPOINTMENT */
 
 .appointment {
   position: relative;

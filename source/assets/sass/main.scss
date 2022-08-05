@@ -93,7 +93,6 @@ fieldset {
   margin: -1px;
   bottom: 0;
   padding: 0;
-  white-space: no-wrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden
@@ -184,9 +183,6 @@ fieldset {
   background-color: rgba(255, 255, 255, .6);;
 }
 
-/* SLIDER */
-@import "./chunks/slider";
-
 /* INDEX  */
 @import "./chunks/header";
 @import "./chunks/stats";
@@ -199,8 +195,8 @@ fieldset {
 @import "./chunks/portfolio";
 @import "./chunks/price";
 
-/* appointment */
-@import "./chunks/appointment-form";
+/* APPOINTMENT */
+@import "./chunks/appointment.scss";
 
 
 

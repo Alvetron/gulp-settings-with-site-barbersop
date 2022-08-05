@@ -25,6 +25,10 @@
     margin: 0 auto 30px auto;
   }
 
+  &__item-inner {
+    display: flex;
+  }
+
   &__image {
     margin-top: 5px;
     margin-right: 20px;
